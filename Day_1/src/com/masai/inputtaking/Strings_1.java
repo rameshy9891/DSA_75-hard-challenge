@@ -22,7 +22,7 @@ public class Strings_1 {
 	  
 	  //System.out.println(Arrays.toString(charArr));
 	  
-	  Arrays.sort(charArr);
+	//  Arrays.sort(charArr);
 	  
 	  for(char ch : charArr) {
 		  System.out.print(ch+" ");
