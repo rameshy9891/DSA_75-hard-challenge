@@ -18,6 +18,8 @@ public class Strings_1 {
 		System.out.println("plse enter the string ");
 		String str= sc.nextLine();
 		
+		System.out.println(str);
+		
 	  char[] charArr= str.toCharArray();
 	  
 	  //System.out.println(Arrays.toString(charArr));
