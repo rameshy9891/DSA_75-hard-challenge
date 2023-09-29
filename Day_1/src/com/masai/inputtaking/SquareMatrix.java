@@ -36,7 +36,7 @@ public class SquareMatrix {
 		for(int k=0; k<arr.length; k++) {
 			//System.out.println(Arrays.toString(arr[k]));
 			for(int m=0; m<arr.length; m++) {
-				System.out.print(arr[k][m]+" ");
+				System.out.print(arr[k][m]+1+" ");
 			}
 			System.out.println();
 		}
