@@ -11,6 +11,7 @@ public class Move2Ahead2 {
 		
 		Scanner sc= new Scanner(System.in);
 		
+		System.out.println("plse enter the target of the element");
 		int tar= sc.nextInt();
 		
 		for(int i=2; i<=tar; i++) {
