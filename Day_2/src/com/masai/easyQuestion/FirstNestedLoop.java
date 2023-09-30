@@ -20,7 +20,7 @@ public class FirstNestedLoop {
 	  
 	  int num= sc.nextInt();
 	  
-	  System.out.println("***** -: Your Pettern :- ******\n");
+	  System.out.println("***** -: Your Pettern :- ******");
 	  
 	  for(int i=1; i<=num; i++) {
 		  for(int j=1; j<=num; j++) {
