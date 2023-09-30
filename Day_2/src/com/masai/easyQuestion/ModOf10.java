@@ -20,9 +20,9 @@ public class ModOf10 {
 		for(int i=1; i<=tar; i++) {
 			int res= i%10;
 			
-			if(res==0) {
-				break;
-			}
+//			if(res==0) {
+//				break;
+//			}
 			
 			System.out.print(res+" ");
 		}
