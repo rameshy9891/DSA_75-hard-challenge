@@ -14,7 +14,7 @@ public class Move2Ahead {
 		int target= sc.nextInt();
 		
 		for(int i=1; i<=target; i++) {
-			System.out.println(i);
+			System.out.print(i+" ");
 			i++;
 		}
 		
