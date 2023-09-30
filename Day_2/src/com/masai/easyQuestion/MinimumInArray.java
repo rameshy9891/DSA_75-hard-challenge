@@ -2,7 +2,8 @@ package com.masai.easyQuestion;
 
 import java.util.Scanner;
 
-public class MaximumInArray {
+public class MinimumInArray {
+
 
 	/*
 	 * we have to take input form user
@@ -13,7 +14,7 @@ public class MaximumInArray {
 	 * 
 	 * sample output;
 	 * 
-	 * 5
+	 * 1
 	 */
 	
 	public static void main(String[] args) {
@@ -43,15 +44,15 @@ public class MaximumInArray {
 	private static void findMaximumInArray(int len, int[] arr) {
 		// TODO Auto-generated method stub
 		
-		int max=-10000;
+		int min=10000;
 		
 		for(int i=0; i<arr.length; i++) {
-			if(max<arr[i]) {
-				max=arr[i];
+			if(min>arr[i]) {
+				min=arr[i];
 			}
 		}
 		
-		System.out.println("maximum is :"+max);
+		System.out.println("minimum is :"+min);
 		
 	}
 
