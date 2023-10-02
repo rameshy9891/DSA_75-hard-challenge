@@ -34,17 +34,20 @@ public class UnitsConsumed {
 		int num= sc.nextInt();
 		
 		int bill= num-80;
-		
+		// extra charge to hta diya
 		if(bill<=150) {
 			bill=bill/3;
 		}
+		//650 me say 150 bill to 50 unit ka tha boa 150 minus karo or 50 unit plus krr doa
 		else if(650>=bill) {
 			bill= ((bill-150)/5)+50;
 		}
+		// 650 say jada bill ho 650 to pahle ka count krr loa 650 minus krr do bill say or 
+		// ushki unit joad loa
 		else if(bill>=650) {
 			bill= ((bill-650)/10)+150;
 		}
-		
+		 //final bill
 		System.out.println(bill);
 	}
 
