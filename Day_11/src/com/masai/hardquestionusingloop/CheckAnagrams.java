@@ -46,7 +46,7 @@ public static void main(String[] args) {
 	}
 	}
 	
-	System.out.println(str2Arr.length);
+	System.out.println((str2Arr.length+str1Arr.length)-(count+count));
 	System.out.println(count);
 	if((str2Arr.length)==count) {
 		System.out.println("Anagram");
