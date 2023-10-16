@@ -1,9 +1,9 @@
 package com.masai.dayseventeen;
+
 import java.util.Scanner;
 
-public class RightTwoVote {
+public class RightToVote2 {
     public static void main(String[] args) {
-        // Input budget
         System.out.print("Please enter your budget: \n");
         Scanner sc = new Scanner(System.in);
         double budget = sc.nextDouble();
@@ -13,26 +13,18 @@ public class RightTwoVote {
         double jeansPrice = 80.00;
         double jacketPrice = 100.00;
 
-        // Calculate maximum quantity of each item
         int maxTShirts = (int) (budget / tShirtPrice);
         int maxJeans = (int) (budget / jeansPrice);
-        int maxJackets = (int) (budget / jacketPrice);
 
-        // Loop through combinations
         for (int tShirts = 1; tShirts <= maxTShirts; tShirts++) {
             for (int jeans = 1; jeans <= maxJeans; jeans++) {
-                for (int jackets = 1; jackets <= maxJackets; jackets++) {
-                    // Calculate the total cost for the current combination
-                    double totalCost = tShirts * tShirtPrice + jeans * jeansPrice + jackets * jacketPrice;
+                double remainingBudget = budget - (tShirts * tShirtPrice + jeans * jeansPrice);
 
-                    
-                    if (totalCost > budget) {
-                        break;  // No need to continue the inner loop
-                    }
-                    
-                    
-                    // Check if the combination is valid
-                    if (totalCost <= budget && tShirts >= 1 && jeans >= 1 && jackets >= 1 && totalCost >= (budget-50 ) ) {
+                if (remainingBudget >= jacketPrice) {
+                    int jackets = (int) (remainingBudget / jacketPrice);
+                    double newBudget = remainingBudget - (jackets * jacketPrice);
+
+                    if (jackets >= 1 && newBudget < 50.00) {
                         System.out.println("T-shirts: " + tShirts +
                                 ", Jeans: " + jeans +
                                 ", Jackets: " + jackets);
@@ -42,3 +34,4 @@ public class RightTwoVote {
         }
     }
 }
+
